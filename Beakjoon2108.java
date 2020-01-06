@@ -1,12 +1,11 @@
-package Á¤·Ä;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class a_2108 {
+public class Beakjoon2108 {
 
-	public static void main(String[] args) throws Exception { // ¿¹¿ÜÃ³¸®°¡ ¹İµå½Ã ÇÊ¿ä
+	public static void main(String[] args) throws Exception { // ì˜ˆì™¸ì²˜ë¦¬ê°€ ë°˜ë“œì‹œ í•„ìš”
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
 		 
@@ -20,7 +19,7 @@ public class a_2108 {
 		for (int i=0; i<n; i++) { 
 			int tmp = Integer.parseInt(br.readLine());
 			list[i] = tmp;
-			sum += tmp; // »ê¼ú Æò±ÕÀ» ±¸ÇÏ±â À§ÇØ
+			sum += tmp; // ì‚°ìˆ  í‰ê· ì„ êµ¬í•˜ê¸° ìœ„í•´
 			if(map.containsKey(tmp)) {
 				    if(maxFreq < map.get(tmp)+1) maxFreq = map.get(tmp)+1;
 				    map.put(tmp, map.get(tmp)+1);
@@ -30,29 +29,29 @@ public class a_2108 {
 			}
 		}
 		
-		Arrays.sort(list); // ÇØ´ç ¹è¿­À» Á¤·Ä
+		Arrays.sort(list); // í•´ë‹¹ ë°°ì—´ì„ ì •ë ¬
 		
-		System.out.println(Math.round((float)sum/n)); // »ê¼ú Æò±Õ
+		System.out.println(Math.round((float)sum/n)); // ì‚°ìˆ  í‰ê· 
 		
-		System.out.println(list[n/2]); // Áß¾Ó°ª
+		System.out.println(list[n/2]); // ì¤‘ì•™ê°’
 		
-		System.out.println(getFreq(map, maxFreq)); // ÃÖºó°ª
+		System.out.println(getFreq(map, maxFreq)); // ìµœë¹ˆê°’
 		
-		System.out.println(list[n-1]-list[0]); // ¹üÀ§
+		System.out.println(list[n-1]-list[0]); // ë²”ìœ„
 
     }
 	
 	static int getFreq(Map map, int maxFreq) {
 		List<Integer> freq = new ArrayList<Integer>();
-		List<Integer> tmp = new ArrayList<Integer>(map.keySet()); // Å° °ªµéÀ» ¸ğµÎ tmp¿¡ ÀúÀå
+		List<Integer> tmp = new ArrayList<Integer>(map.keySet()); // í‚¤ ê°’ë“¤ì„ ëª¨ë‘ tmpì— ì €ì¥
 		for (int i=0; i<tmp.size(); i++) {
 			if ((int)map.get(tmp.get(i))==maxFreq) {
 				freq.add(tmp.get(i));
 			}
 		}
-		Collections.sort(freq); // °ªµéÀ» ¸ğµÎ Á¤·Ä
-		if (freq.size()==1)return freq.get(0); // ¿ø¼Ò°¡ 1°³ÀÎ °æ¿ì
-		else return freq.get(1); // ¿ø¼Ò°¡ 2°³ ÀÌ»óÀÏ ¶§
+		Collections.sort(freq); // ê°’ë“¤ì„ ëª¨ë‘ ì •ë ¬
+		if (freq.size()==1)return freq.get(0); // ì›ì†Œê°€ 1ê°œì¸ ê²½ìš°
+		else return freq.get(1); // ì›ì†Œê°€ 2ê°œ ì´ìƒì¼ ë•Œ
 	}
 
 }
