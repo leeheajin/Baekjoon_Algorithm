@@ -1,24 +1,24 @@
-// 11650. 2Â÷¿ø Æò¸é À§ÀÇ Á¡ N°³°¡ ÁÖ¾îÁø´Ù. ÁÂÇ¥¸¦ xÁÂÇ¥°¡ Áõ°¡ÇÏ´Â ¼øÀ¸·Î, xÁÂÇ¥°¡ °°À¸¸é yÁÂÇ¥°¡ Áõ°¡ÇÏ´Â ¼ø¼­·Î Á¤·ÄÇÑ ´ÙÀ½ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+// 11650. 2ì°¨ì› í‰ë©´ ìœ„ì˜ ì  Nê°œê°€ ì£¼ì–´ì§„ë‹¤. ì¢Œí‘œë¥¼ xì¢Œí‘œê°€ ì¦ê°€í•˜ëŠ” ìˆœìœ¼ë¡œ, xì¢Œí‘œê°€ ê°™ìœ¼ë©´ yì¢Œí‘œê°€ ì¦ê°€í•˜ëŠ” ìˆœì„œë¡œ ì •ë ¬í•œ ë‹¤ìŒ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.
 
 import java.util.*;
 
 class Point implements Comparable<Point> {
-	int x, y; // Æò¸éÀÇ µÎ Á¡À» ÀúÀå
+	int x, y; // í‰ë©´ì˜ ë‘ ì ì„ ì €ì¥
 	
-	public Point(int x, int y) { // °´Ã¼ »ı¼ºÀÚ
+	public Point(int x, int y) { // ê°ì²´ ìƒì„±ì
 		this.x = x;
 		this.y = y;
 	}
 	
 	@Override
 	public int compareTo(Point point) {
-		if (this.x>point.x) return 1; // À½¼ö°¡ ¸®ÅÏµÉ °æ¿ì : ¼ø¼­¸¦ ¹Ù²Ş
+		if (this.x>point.x) return 1; // ìŒìˆ˜ê°€ ë¦¬í„´ë  ê²½ìš° : ìˆœì„œë¥¼ ë°”ê¿ˆ
 
 		else if (this.x==point.x) {
 				if (this.y>point.y) 
 					return 1;
 			}
-		return -1; // 0¶Ç´Â -1ÀÌ ¸®ÅÏµÉ °æ¿ì : ¼ø¼­¸¦ ¹Ù²ÙÁö ¾ÊÀ½
+		return -1; // 0ë˜ëŠ” -1ì´ ë¦¬í„´ë  ê²½ìš° : ìˆœì„œë¥¼ ë°”ê¾¸ì§€ ì•ŠìŒ
 		}
 	}
 	
@@ -27,7 +27,7 @@ public class Baekjoon11650 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt(); // ÀúÀåÇÒ Á¡ÀÇ °³¼ö
+		int N = sc.nextInt(); // ì €ì¥í•  ì ì˜ ê°œìˆ˜
 		List<Point> list = new ArrayList<>();
 		for (int i=0; i<N; i++) {
 			int x = sc.nextInt();
