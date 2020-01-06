@@ -1,11 +1,9 @@
-// 2751. N°³ÀÇ ¼ö°¡ ÁÖ¾îÁ³À» ¶§, ÀÌ¸¦ ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
-// Mergesort¸¦ ÀÌ¿ëÇØ¼­ ±¸Çö O(nlogn)
-
-package Á¤·Ä;
+// 2751. Nê°œì˜ ìˆ˜ê°€ ì£¼ì–´ì¡Œì„ ë•Œ, ì´ë¥¼ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.
+// Mergesortë¥¼ ì´ìš©í•´ì„œ êµ¬í˜„ O(nlogn)
 
 import java.util.*;
 
-public class a_2751 {
+public class Beakjoon2751 {
 	
 	static int sorted[] = new int[1000000];
 	
@@ -13,7 +11,7 @@ public class a_2751 {
       
     	Scanner sc = new Scanner (System.in);
 		
-		int n = sc.nextInt(); // ¼öÀÇ °³¼ö
+		int n = sc.nextInt(); // ìˆ˜ì˜ ê°œìˆ˜
 		
 		int list[] = new int[n];
 		
@@ -31,7 +29,7 @@ public class a_2751 {
     	int st1 = start;
     	int st2 = mid+1;
     	
-    	while (st1<=mid && st2<=end) { // ÇÑ ¹è¿­ÀÌ ³¡³ª¸é ¹İº¹¹® Á¾·á
+    	while (st1<=mid && st2<=end) { // í•œ ë°°ì—´ì´ ëë‚˜ë©´ ë°˜ë³µë¬¸ ì¢…ë£Œ
     		if (list[st1]<=list[st2]) {
     			sorted[count]=list[st1];
     			st1++;
@@ -43,7 +41,7 @@ public class a_2751 {
     		count++;
     	}
     	
-    	if (st1>mid) { // ¾ÕÀÇ ¹è¿­À» ¸ğµÎ ´Ù ¼ÒÁøÇÑ °æ¿ì
+    	if (st1>mid) { // ì•ì˜ ë°°ì—´ì„ ëª¨ë‘ ë‹¤ ì†Œì§„í•œ ê²½ìš°
     		for (int i=st2; i<=end; i++) {
     			sorted[count]=list[i];
     			count++;
@@ -65,7 +63,7 @@ public class a_2751 {
     
     public static void mergeSort(int list[], int start, int end) {
     	
-    	int mid = (start+end)/2; // Áß°£Á¡À» ÁöÁ¤
+    	int mid = (start+end)/2; // ì¤‘ê°„ì ì„ ì§€ì •
     	if (start<end) {
     		mergeSort(list, start, mid);
     		mergeSort(list, mid+1, end);
