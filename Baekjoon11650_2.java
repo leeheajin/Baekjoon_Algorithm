@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Baekjoon11650_2 {
+public class Baekjoon11650_1 {
 	
 	static int N;
 	static int sorted[][];
