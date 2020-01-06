@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class a_2775 {
+public class Beakjoon2775 {
 
 	static int memo[][] = new int [15][15];
 	
@@ -11,19 +11,19 @@ public class a_2775 {
 		
 		int people[] = new int [t]; 
 		
-		for (int i=0;i<t;i++) { // ÃÑ t¹ø °¢°¢ÀÇ ÄÉÀÌ½º ¼öÇà
-			int k = sc.nextInt(); // Ãþ
-			int n = sc.nextInt(); // È£
+		for (int i=0;i<t;i++) { // ì´ të²ˆ ê°ê°ì˜ ì¼€ì´ìŠ¤ ìˆ˜í–‰
+			int k = sc.nextInt(); // ì¸µ
+			int n = sc.nextInt(); // í˜¸
 			people[i] = sum(k,n);
 		}
 		
 		for (int i=0; i<t; i++) System.out.println(people[i]);
 	}
 	
-	public static int sum (int a, int b) { // aÃþ bÈ£
+	public static int sum (int a, int b) { // aì¸µ bí˜¸
 		
-		if (memo[a][b]==0) { // ÇØ´ç °ªÀ» °è»êÇØ¾ß ÇÏ´Â °æ¿ì
-			if (a==0) { // ¸Ç ¾Æ·¡ ÃþÀÏ ¶§
+		if (memo[a][b]==0) { // í•´ë‹¹ ê°’ì„ ê³„ì‚°í•´ì•¼ í•˜ëŠ” ê²½ìš°
+			if (a==0) { // ë§¨ ì•„ëž˜ ì¸µì¼ ë•Œ
 				memo[a][b]=b;
 			}
 			else {
