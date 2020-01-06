@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class a_10250 {
+public class Baekjoon10250 {
 
 	public static void main(String[] args) {
 		
@@ -8,10 +8,10 @@ public class a_10250 {
 		int t = sc.nextInt(); // test case
 		int room[] = new int [t]; 
 		
-		for (int i=0; i<t; i++) { // 1 ¡Â H, W ¡Â 99, 1 ¡Â N ¡Â H ¡¿ W
-			int h = sc.nextInt(); // ¼¼·Î 
-			int w = sc.nextInt(); // °¡·Î
-			int n = sc.nextInt(); // ¼Õ´Ô ¹øÈ£
+		for (int i=0; i<t; i++) { // 1 â‰¤ H, W â‰¤ 99, 1 â‰¤ N â‰¤ H Ã— W
+			int h = sc.nextInt(); // ì„¸ë¡œ 
+			int w = sc.nextInt(); // ê°€ë¡œ
+			int n = sc.nextInt(); // ì†ë‹˜ ë²ˆí˜¸
 			
 			int a = 0; 
 			int b = 0;
