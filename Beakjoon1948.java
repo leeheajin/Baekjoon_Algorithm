@@ -1,10 +1,9 @@
-// nÀÌ ÁÖ¾îÁ³À» ¶§, nº¸´Ù Å©°í, 2nº¸´Ù ÀÛ°Å³ª °°Àº ¼Ò¼öÀÇ °³¼ö¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À. 
+// nì´ ì£¼ì–´ì¡Œì„ ë•Œ, në³´ë‹¤ í¬ê³ , 2në³´ë‹¤ ì‘ê±°ë‚˜ ê°™ì€ ì†Œìˆ˜ì˜ ê°œìˆ˜ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤. 
 
-package ¼öÇĞ2;
 
 import java.util.*;
 
-public class a_1948 {
+public class Beakjoon1948 {
 
 	public static void main(String[] args) {
 
@@ -13,13 +12,13 @@ public class a_1948 {
 		ArrayList<Integer> list = new ArrayList<>();
 		ArrayList<Integer> answer = new ArrayList<>();
 		
-		while (true) { // Å×½ºÆ® ÄÉÀÌ½º¿¡ ´ëÇÑ °ªµéÀ» °è¼ÓÇØ¼­ ¹ŞÀ½
+		while (true) { // í…ŒìŠ¤íŠ¸ ì¼€ì´ìŠ¤ì— ëŒ€í•œ ê°’ë“¤ì„ ê³„ì†í•´ì„œ ë°›ìŒ
 			n=sc.nextInt();
-			if (n==0) break; // 0ÀÌ µé¾î¿À¸é ´õÀÌ»ó °ªµéÀ» ¹ŞÁö ¾ÊÀ½
+			if (n==0) break; // 0ì´ ë“¤ì–´ì˜¤ë©´ ë”ì´ìƒ ê°’ë“¤ì„ ë°›ì§€ ì•ŠìŒ
 			list.add(n);
 		}
 		
-		for (int i=0; i<list.size(); i++) { // °á°ú °ªÀ» ±¸ÇØ¼­ ÀúÀå
+		for (int i=0; i<list.size(); i++) { // ê²°ê³¼ ê°’ì„ êµ¬í•´ì„œ ì €ì¥
 			int count=0;
 			for (int j=list.get(i)+1; j<=2*list.get(i); j++) {
 				if (prime(j)) count++;
@@ -27,7 +26,7 @@ public class a_1948 {
 			answer.add(count);
 		}
 		
-		for (int i=0; i<answer.size(); i++) { // °á°ú °ªµéÀ» Ãâ·Â
+		for (int i=0; i<answer.size(); i++) { // ê²°ê³¼ ê°’ë“¤ì„ ì¶œë ¥
 			System.out.println(answer.get(i));
 		}
 		
