@@ -1,8 +1,8 @@
-// 2798. NÀåÀÇ Ä«µå¿¡ ½áÁ® ÀÖ´Â ¼ıÀÚ°¡ ÁÖ¾îÁ³À» ¶§, MÀ» ³ÑÁö ¾ÊÀ¸¸é¼­ M¿¡ ÃÖ´ëÇÑ °¡±î¿î Ä«µå 3ÀåÀÇ ÇÕÀ» ±¸ÇØ Ãâ·ÂÇÏ½Ã¿À.
+// 2798. Nì¥ì˜ ì¹´ë“œì— ì¨ì ¸ ìˆëŠ” ìˆ«ìê°€ ì£¼ì–´ì¡Œì„ ë•Œ, Mì„ ë„˜ì§€ ì•Šìœ¼ë©´ì„œ Mì— ìµœëŒ€í•œ ê°€ê¹Œìš´ ì¹´ë“œ 3ì¥ì˜ í•©ì„ êµ¬í•´ ì¶œë ¥í•˜ì‹œì˜¤.
 
 import java.util.*;
 
-public class a_2798 {
+public class Beakjoon2798 {
 
 	public static void main(String[] args) {
 
@@ -11,9 +11,9 @@ public class a_2798 {
 		int N = sc.nextInt();
 		int M = sc.nextInt();
 		
-		int bestsum = 0; // ÇöÀç ÃÖÀûÀÇ ÇÕ
-		int sum = 0; // ¼¼ Ä«µåÀÇ ÇÕ
-		int card[] = new int[N]; // NÀåÀÇ Ä«µå¸¦ ÀúÀå
+		int bestsum = 0; // í˜„ì¬ ìµœì ì˜ í•©
+		int sum = 0; // ì„¸ ì¹´ë“œì˜ í•©
+		int card[] = new int[N]; // Nì¥ì˜ ì¹´ë“œë¥¼ ì €ì¥
 		
 		for (int i=0; i<N; i++) {
 			card[i] = sc.nextInt();
@@ -27,11 +27,11 @@ public class a_2798 {
 					
 					sum = card[i]+card[j]+card[k];
 					
-					if (M-bestsum>M-sum && sum<=M) { // ÇöÀçÀÇ °ªÀÌ ´õ ÃÖÀûÀÏ ¶§
+					if (M-bestsum>M-sum && sum<=M) { // í˜„ì¬ì˜ ê°’ì´ ë” ìµœì ì¼ ë•Œ
 						bestsum = sum;
 					}
 					
-					if (M-bestsum==0) { // ÃÖÀûÀÇ ÇØ¶ó°í È®½ÅÇÒ ¼ö ÀÖ´Â °æ¿ì
+					if (M-bestsum==0) { // ìµœì ì˜ í•´ë¼ê³  í™•ì‹ í•  ìˆ˜ ìˆëŠ” ê²½ìš°
 						System.out.println(bestsum);
 						return;
 					}
