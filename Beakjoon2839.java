@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class a_2839 {
+public class Beakjoon2839 {
 
 	public static void main(String[] args) {
 		
@@ -20,7 +20,7 @@ public class a_2839 {
 		
 		
 		if (answer == 10000) {
-			System.out.println(-1); // Á¤È®ÇÏ°Ô ¹è´ŞÇÒ ¼ö ¾øÀ½
+			System.out.println(-1); // ÃÂ¤ÃˆÂ®Ã‡ÃÂ°Ã” Â¹Ã¨Â´ÃÃ‡Ã’ Â¼Ã¶ Â¾Ã¸Ã€Â½
 		}
 		
 		else {
