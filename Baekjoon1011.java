@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
-public class a_1011 {
+public class Baekjoon1011 {
 	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt(); // test case
-		int count[] = new int [t]; // Á¤´ä Ä«¿îÆ® º¯¼ö
+		int count[] = new int [t]; // ì •ë‹µ ì¹´ìš´íŠ¸ ë³€ìˆ˜
 		
-		for (int i=0;i<t;i++) { // ÃÑ t¹ø °¢°¢ÀÇ ÄÉÀÌ½º ¼öÇà
-			int x = sc.nextInt(); // ÇöÀç À§Ä¡ x
-			int y = sc.nextInt(); // ¸ñÇ¥ À§Ä¡ y, x < y
-			int hop=0; // ÇöÀç ¸îÄ­ ÀÌµ¿
+		for (int i=0;i<t;i++) { // ì´ të²ˆ ê°ê°ì˜ ì¼€ì´ìŠ¤ ìˆ˜í–‰
+			int x = sc.nextInt(); // í˜„ìž¬ ìœ„ì¹˜ x
+			int y = sc.nextInt(); // ëª©í‘œ ìœ„ì¹˜ y, x < y
+			int hop=0; // í˜„ìž¬ ëª‡ì¹¸ ì´ë™
 			count[i]=0;
 			y = y-x;
-			x = 0; // ½ÃÀÛ À§Ä¡¸¦ 0À¸·Î Á¶Á¤
+			x = 0; // ì‹œìž‘ ìœ„ì¹˜ë¥¼ 0ìœ¼ë¡œ ì¡°ì •
 			
 			while (sum(hop+1)<=y-x-(hop+1)) {
 				hop++;
