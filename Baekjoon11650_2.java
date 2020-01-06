@@ -1,9 +1,9 @@
-// 11650. 2Â÷¿ø Æò¸é À§ÀÇ Á¡ N°³°¡ ÁÖ¾îÁø´Ù. ÁÂÇ¥¸¦ xÁÂÇ¥°¡ Áõ°¡ÇÏ´Â ¼øÀ¸·Î, xÁÂÇ¥°¡ °°À¸¸é yÁÂÇ¥°¡ Áõ°¡ÇÏ´Â ¼ø¼­·Î Á¤·ÄÇÑ ´ÙÀ½ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
-// n^2 ½Ã°£º¹Àâµµ¸¦ °®´Â ¹æ¹ýÀ» »ç¿ëÇÒ °æ¿ì ½Ã°£ ÃÊ°ú°¡ ¶ß±â ¶§¹®¿¡, ½Ã°£ º¹Àâµµ°¡ nlognÀÎ mergeSort ¹æ¹ýÀ» »ç¿ëÇß´Ù
+// 11650. 2ì°¨ì› í‰ë©´ ìœ„ì˜ ì  Nê°œê°€ ì£¼ì–´ì§„ë‹¤. ì¢Œí‘œë¥¼ xì¢Œí‘œê°€ ì¦ê°€í•˜ëŠ” ìˆœìœ¼ë¡œ, xì¢Œí‘œê°€ ê°™ìœ¼ë©´ yì¢Œí‘œê°€ ì¦ê°€í•˜ëŠ” ìˆœì„œë¡œ ì •ë ¬í•œ ë‹¤ìŒ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
+// n^2 ì‹œê°„ë³µìž¡ë„ë¥¼ ê°–ëŠ” ë°©ë²•ì„ ì‚¬ìš©í•  ê²½ìš° ì‹œê°„ ì´ˆê³¼ê°€ ëœ¨ê¸° ë•Œë¬¸ì—, ì‹œê°„ ë³µìž¡ë„ê°€ nlognì¸ mergeSort ë°©ë²•ì„ ì‚¬ìš©í–ˆë‹¤
 
 import java.util.*;
 
-public class a_11650 {
+public class Baekjoon11650_2 {
 	
 	static int N;
 	static int sorted[][];
@@ -34,7 +34,7 @@ public class a_11650 {
     	int st1 = start;
     	int st2 = mid+1;
     	
-    	while (st1<=mid && st2<=end) { // ÇÑ ¹è¿­ÀÌ ³¡³ª¸é ¹Ýº¹¹® Á¾·á
+    	while (st1<=mid && st2<=end) { // í•œ ë°°ì—´ì´ ëë‚˜ë©´ ë°˜ë³µë¬¸ ì¢…ë£Œ
     		if (list[st1][0]<list[st2][0]) { // x1 < x2
 	    		sorted[count][0]=list[st1][0];
 	    		sorted[count][1]=list[st1][1];
@@ -62,7 +62,7 @@ public class a_11650 {
     		count++;
     	}
     	
-    	if (st1>mid) { // ¾ÕÀÇ ¹è¿­À» ¸ðµÎ ´Ù ¼ÒÁøÇÑ °æ¿ì
+    	if (st1>mid) { // ì•žì˜ ë°°ì—´ì„ ëª¨ë‘ ë‹¤ ì†Œì§„í•œ ê²½ìš°
     		for (int i=st2; i<=end; i++) {
     			sorted[count][0]=list[i][0];
     			sorted[count][1]=list[i][1];
@@ -88,7 +88,7 @@ public class a_11650 {
 	
     public static void mergeSort(int list[][], int start, int end) {
     	
-    	int mid = (start+end)/2; // Áß°£Á¡À» ÁöÁ¤
+    	int mid = (start+end)/2; // ì¤‘ê°„ì ì„ ì§€ì •
     	if (start<end) {
     		mergeSort(list, start, mid);
     		mergeSort(list, mid+1, end);
