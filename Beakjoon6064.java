@@ -1,8 +1,8 @@
-// 6064. ³× °³ÀÇ Á¤¼ö M, N, x¿Í y°¡ ÁÖ¾îÁú ¶§, <M:N>ÀÌ Ä«À× ´Ş·ÂÀÇ ¸¶Áö¸· ÇØ¶ó°í ÇÏ¸é <x:y>´Â ¸î ¹øÂ° ÇØ¸¦ ³ªÅ¸³»´ÂÁö ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¶ó. 
+// 6064. ë„¤ ê°œì˜ ì •ìˆ˜ M, N, xì™€ yê°€ ì£¼ì–´ì§ˆ ë•Œ, <M:N>ì´ ì¹´ì‰ ë‹¬ë ¥ì˜ ë§ˆì§€ë§‰ í•´ë¼ê³  í•˜ë©´ <x:y>ëŠ” ëª‡ ë²ˆì§¸ í•´ë¥¼ ë‚˜íƒ€ë‚´ëŠ”ì§€ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ë¼. 
 
 import java.util.Scanner;
 
-public class a_6064 {
+public class Beakjoon6064 {
 
 	public static void main(String[] args) {
 		
@@ -10,13 +10,13 @@ public class a_6064 {
 		int t = sc.nextInt(); // test case
 		int count [] = new int [t]; 
 		
-		for (int i=0; i<t; i++) { // 1 ¡Â M, N ¡Â 40,000, 1 ¡Â x ¡Â M, 1 ¡Â y ¡Â N
+		for (int i=0; i<t; i++) { // 1 â‰¤ M, N â‰¤ 40,000, 1 â‰¤ x â‰¤ M, 1 â‰¤ y â‰¤ N
 			int m = sc.nextInt(); 
 			int n = sc.nextInt();
 			int x = sc.nextInt(); // <x, y>
 			int y = sc.nextInt();
 			
-			if (m>n) { // Å« ¼ö°¡ µÚ·Î ÀÌµ¿ÇØ¾ß ÇÔ
+			if (m>n) { // í° ìˆ˜ê°€ ë’¤ë¡œ ì´ë™í•´ì•¼ í•¨
 				int tmp = m;
 				m = n;
 				n = tmp;
@@ -46,13 +46,13 @@ public class a_6064 {
 
 	}
 
-	public static int LCM (int a, int b) { // ÃÖ¼Ò°ø¹è¼ö
+	public static int LCM (int a, int b) { // ìµœì†Œê³µë°°ìˆ˜
 		
 		int tmp1 = a, tmp2 = b;
 		int r = 1;
 		int LCM;
 		
-		if(a<b){ // b°¡ Å¬ °æ¿ì Å«¼ö¸¦ aÀ¸·Î º¯°æ
+		if(a<b){ // bê°€ í´ ê²½ìš° í°ìˆ˜ë¥¼ aìœ¼ë¡œ ë³€ê²½
 			a = tmp2;
 			b = tmp1;
 	         }
