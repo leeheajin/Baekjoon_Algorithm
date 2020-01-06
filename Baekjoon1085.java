@@ -1,10 +1,8 @@
-// ÇÑ¼ö´Â Áö±Ý (x, y)¿¡ ÀÖ´Ù. Á÷»ç°¢ÇüÀÇ ¿ÞÂÊ ¾Æ·¡ ²ÀÁþÁ¡Àº (0, 0)¿¡ ÀÖ°í, ¿À¸¥ÂÊ À§ ²ÀÁþÁ¡Àº (w, h)¿¡ ÀÖ´Ù. Á÷»ç°¢ÇüÀÇ °æ°è¼±±îÁö °¡´Â °Å¸®ÀÇ ÃÖ¼Ú°ªÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
-
-package ¼öÇÐ2;
+// 1085. í•œìˆ˜ëŠ” ì§€ê¸ˆ (x, y)ì— ìžˆë‹¤. ì§ì‚¬ê°í˜•ì˜ ì™¼ìª½ ì•„ëž˜ ê¼­ì§“ì ì€ (0, 0)ì— ìžˆê³ , ì˜¤ë¥¸ìª½ ìœ„ ê¼­ì§“ì ì€ (w, h)ì— ìžˆë‹¤. ì§ì‚¬ê°í˜•ì˜ ê²½ê³„ì„ ê¹Œì§€ ê°€ëŠ” ê±°ë¦¬ì˜ ìµœì†Ÿê°’ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.
 
 import java.util.Scanner;
 
-public class a_1085 {
+public class Baekjoon1085 {
 
 	public static void main(String[] args) {
 
