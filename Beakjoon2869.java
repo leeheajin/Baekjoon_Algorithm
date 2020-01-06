@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class a_2869 {
+public class Beakjoon2869 {
 
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int a = sc.nextInt(); // A¹ÌÅÍ ¿Ã¶ó°¨  (1 ¡Â B < A ¡Â V ¡Â 1,000,000,000)
-		int b = sc.nextInt(); // B¹ÌÅÍ ³»·Á°¨
-		int v = sc.nextInt(); // ¸·´ëÀÇ ³ôÀÌ
+		int a = sc.nextInt(); // Aë¯¸í„° ì˜¬ë¼ê°  (1 â‰¤ B < A â‰¤ V â‰¤ 1,000,000,000)
+		int b = sc.nextInt(); // Bë¯¸í„° ë‚´ë ¤ê°
+		int v = sc.nextInt(); // ë§‰ëŒ€ì˜ ë†’ì´
 	
 		if ((v-b)%(a-b)==0) {
 			System.out.println((v-a)/(a-b)+1);
