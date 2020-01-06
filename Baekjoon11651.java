@@ -1,7 +1,7 @@
-// 11651. 2Â÷¿ø Æò¸é À§ÀÇ Á¡ N°³°¡ ÁÖ¾îÁø´Ù. ÁÂÇ¥¸¦ yÁÂÇ¥°¡ Áõ°¡ÇÏ´Â ¼øÀ¸·Î, yÁÂÇ¥°¡ °°À¸¸é xÁÂÇ¥°¡ Áõ°¡ÇÏ´Â ¼ø¼­·Î Á¤·ÄÇÑ ´ÙÀ½ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+// 11651. 2ì°¨ì› í‰ë©´ ìœ„ì˜ ì  Nê°œê°€ ì£¼ì–´ì§„ë‹¤. ì¢Œí‘œë¥¼ yì¢Œí‘œê°€ ì¦ê°€í•˜ëŠ” ìˆœìœ¼ë¡œ, yì¢Œí‘œê°€ ê°™ìœ¼ë©´ xì¢Œí‘œê°€ ì¦ê°€í•˜ëŠ” ìˆœì„œë¡œ ì •ë ¬í•œ ë‹¤ìŒ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.
 import java.util.Scanner;
 
-public class a_11651 {
+public class Baekjoon11651 {
 	
 	static int N;
 	static int sorted[][];
@@ -32,7 +32,7 @@ public class a_11651 {
     	int st1 = start;
     	int st2 = mid+1;
     	
-    	while (st1<=mid && st2<=end) { // ÇÑ ¹è¿­ÀÌ ³¡³ª¸é ¹İº¹¹® Á¾·á
+    	while (st1<=mid && st2<=end) { // í•œ ë°°ì—´ì´ ëë‚˜ë©´ ë°˜ë³µë¬¸ ì¢…ë£Œ
     		if (list[st1][1]<list[st2][1]) { // y1 < y2
 	    		sorted[count][0]=list[st1][0];
 	    		sorted[count][1]=list[st1][1];
@@ -60,7 +60,7 @@ public class a_11651 {
     		count++;
     	}
     	
-    	if (st1>mid) { // ¾ÕÀÇ ¹è¿­À» ¸ğµÎ ´Ù ¼ÒÁøÇÑ °æ¿ì
+    	if (st1>mid) { // ì•ì˜ ë°°ì—´ì„ ëª¨ë‘ ë‹¤ ì†Œì§„í•œ ê²½ìš°
     		for (int i=st2; i<=end; i++) {
     			sorted[count][0]=list[i][0];
     			sorted[count][1]=list[i][1];
@@ -86,7 +86,7 @@ public class a_11651 {
 	
     public static void mergeSort(int list[][], int start, int end) {
     	
-    	int mid = (start+end)/2; // Áß°£Á¡À» ÁöÁ¤
+    	int mid = (start+end)/2; // ì¤‘ê°„ì ì„ ì§€ì •
     	if (start<end) {
     		mergeSort(list, start, mid);
     		mergeSort(list, mid+1, end);
