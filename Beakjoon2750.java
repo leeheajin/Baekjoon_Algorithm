@@ -1,16 +1,14 @@
-// 2750. N°³ÀÇ ¼ö°¡ ÁÖ¾îÁ³À» ¶§, ÀÌ¸¦ ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
-
-package Á¤·Ä;
+// 2750. Nê°œì˜ ìˆ˜ê°€ ì£¼ì–´ì¡Œì„ ë•Œ, ì´ë¥¼ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.
 
 import java.util.*;
 
-public class a_2750 {
+public class Beakjoon2750 {
 
 	public static void main(String[] args) {
 			
 		Scanner sc = new Scanner (System.in);
 		
-		int n = sc.nextInt(); // ¼öÀÇ °³¼ö
+		int n = sc.nextInt(); // ìˆ˜ì˜ ê°œìˆ˜
 		
 		int list[] = new int[n];
 		
@@ -18,7 +16,7 @@ public class a_2750 {
 			
 		for (int i=0; i<n-1; i++) {
 			int min = 1001;
-			int num = i; // ¸î ¹øÂ° ÀÚ¸®ÀÇ ¼ö°¡ Á¦ÀÏ ÀÛÀºÁö ÀúÀå
+			int num = i; // ëª‡ ë²ˆì§¸ ìë¦¬ì˜ ìˆ˜ê°€ ì œì¼ ì‘ì€ì§€ ì €ì¥
 			
 			for (int j=i; j<n; j++) {				
 				if (list[j]<=min) {
