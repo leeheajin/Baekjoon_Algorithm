@@ -1,10 +1,8 @@
-// 9020. 2º¸´Ù Å« Â¦¼ö nÀÌ ÁÖ¾îÁ³À» ¶§, nÀÇ °ñµå¹ÙÈå ÆÄÆ¼¼ÇÀ» Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À. ¸¸¾à °¡´ÉÇÑ nÀÇ °ñµå¹ÙÈå ÆÄÆ¼¼ÇÀÌ ¿©·¯ °¡ÁöÀÎ °æ¿ì¿¡´Â µÎ ¼Ò¼öÀÇ Â÷ÀÌ°¡ °¡Àå ÀÛÀº °ÍÀ» Ãâ·ÂÇÑ´Ù.
-
-package ¼öÇĞ2;
+// 9020. 2ë³´ë‹¤ í° ì§ìˆ˜ nì´ ì£¼ì–´ì¡Œì„ ë•Œ, nì˜ ê³¨ë“œë°”í íŒŒí‹°ì…˜ì„ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤. ë§Œì•½ ê°€ëŠ¥í•œ nì˜ ê³¨ë“œë°”í íŒŒí‹°ì…˜ì´ ì—¬ëŸ¬ ê°€ì§€ì¸ ê²½ìš°ì—ëŠ” ë‘ ì†Œìˆ˜ì˜ ì°¨ì´ê°€ ê°€ì¥ ì‘ì€ ê²ƒì„ ì¶œë ¥í•œë‹¤.
 
 import java.util.*;
 
-public class a_9020 {
+public class Beakjoon9020 {
 
 	public static void main(String[] args) {
 		
@@ -13,7 +11,7 @@ public class a_9020 {
 		ArrayList<Integer> list = new ArrayList<>();
 		ArrayList<Integer> answer = new ArrayList<>();
 		
-		for (int i=0; i<T; i++) { // T°³ÀÇ ¼ö¸¦ ¹Ş¾Æ¼­ ArrayList¿¡ ÀúÀå
+		for (int i=0; i<T; i++) { // Tê°œì˜ ìˆ˜ë¥¼ ë°›ì•„ì„œ ArrayListì— ì €ì¥
 			list.add(sc.nextInt()); 
 		}
 		
@@ -30,7 +28,7 @@ public class a_9020 {
 			}
 		}
 		
-		for (int i=0; i<answer.size()/2; i++) { // Á¤´äÀ» 2°³¾¿ ³ª´©¾î Ãâ·Â
+		for (int i=0; i<answer.size()/2; i++) { // ì •ë‹µì„ 2ê°œì”© ë‚˜ëˆ„ì–´ ì¶œë ¥
 			System.out.println(answer.get(2*i)+" "+answer.get(2*i+1));
 		}
 	}
