@@ -1,26 +1,25 @@
-package Á¤·Ä;
 
 import java.util.*;
 
-public class a_1427 {
+public class Beakjoon1427 {
 
 	public static void main(String[] args) throws Exception {
 		
 		Scanner sc = new Scanner (System.in);
 		long num = sc.nextLong();
-		long a=num; // ¸ò
-		int b=0; // ³ª¸ÓÁö
+		long a=num; // ëª«
+		int b=0; // ë‚˜ë¨¸ì§€
 		
 		List<Integer> list = new ArrayList<Integer>();
 		
 		
-		while(a!=0) { // ¼ýÀÚ¸¦ ¸ðµÎ ÀúÀå
+		while(a!=0) { // ìˆ«ìžë¥¼ ëª¨ë‘ ì €ìž¥
 			b=(int)(a%10);
-			a=a/10; // °è¼Ó ³ª´©¾î °¨
+			a=a/10; // ê³„ì† ë‚˜ëˆ„ì–´ ê°
 			list.add(b);
 		}
 		
-		Collections.sort(list); // * Collections.reverse() : ¸®½ºÆ®ÀÇ ±¸¼ºÀ» ¹Ý´ë·Î µÚÁýÀ½
+		Collections.sort(list); // * Collections.reverse() : ë¦¬ìŠ¤íŠ¸ì˜ êµ¬ì„±ì„ ë°˜ëŒ€ë¡œ ë’¤ì§‘ìŒ
 		
 		for (int i=list.size()-1; i>=0; i--) System.out.print(list.get(i));
 		
