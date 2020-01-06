@@ -1,17 +1,17 @@
-// 2231. ÀÚ¿¬¼ö NÀÌ ÁÖ¾îÁ³À» ¶§, NÀÇ °¡Àå ÀÛÀº »ı¼ºÀÚ¸¦ ±¸ÇØ³»´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+// 2231. ìì—°ìˆ˜ Nì´ ì£¼ì–´ì¡Œì„ ë•Œ, Nì˜ ê°€ì¥ ì‘ì€ ìƒì„±ìë¥¼ êµ¬í•´ë‚´ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.
 
 import java.util.*;
 
-public class a_2231 {
+public class Beakjoon2231 {
 
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner (System.in);
 		
-		int N = sc.nextInt(); // ÀÌ¿ëÀÚ°¡ ÀÔ·ÂÇÑ ¼ıÀÚ
+		int N = sc.nextInt(); // ì´ìš©ìê°€ ì…ë ¥í•œ ìˆ«ì
 		
-		int sum = 0; // ºĞÇØÇÕÀ» ³ªÅ¸³»´Â ¼ıÀÚ
-		int num = 0; // ¸òÀ» ³ªÅ¸³»´Â ¼ö
+		int sum = 0; // ë¶„í•´í•©ì„ ë‚˜íƒ€ë‚´ëŠ” ìˆ«ì
+		int num = 0; // ëª«ì„ ë‚˜íƒ€ë‚´ëŠ” ìˆ˜
 		
 		for (int i=1; i<N; i++) {
 			sum=i;
