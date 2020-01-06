@@ -1,4 +1,3 @@
-package ÇÔ¼ö;
 
 public class GCD_LCM {
 
@@ -7,12 +6,12 @@ public class GCD_LCM {
 
 	}
 
-	public static int GCD (int a, int b) { // ÃÖ´ë °ø¾à¼ö
+	public static int GCD (int a, int b) { // ìµœëŒ€ ê³µì•½ìˆ˜
 		
 		int tmp1 = a, tmp2 = b;
 		int r = 1;
 		
-		if(a<b){ // b°¡ Å¬ °æ¿ì Å«¼ö¸¦ aÀ¸·Î º¯°æ
+		if(a<b){ // bê°€ í´ ê²½ìš° í°ìˆ˜ë¥¼ aìœ¼ë¡œ ë³€ê²½
 			a = tmp2;
 			b = tmp1;
 	         }
@@ -26,13 +25,13 @@ public class GCD_LCM {
 	        
 	}
 	
-	public static int LCM (int a, int b) { // ÃÖ¼Ò°ø¹è¼ö
+	public static int LCM (int a, int b) { // ìµœì†Œê³µë°°ìˆ˜
 		
 		int tmp1 = a, tmp2 = b;
 		int r = 1;
 		int LCM;
 		
-		if(a<b){ // b°¡ Å¬ °æ¿ì Å«¼ö¸¦ aÀ¸·Î º¯°æ
+		if(a<b){ // bê°€ í´ ê²½ìš° í°ìˆ˜ë¥¼ aìœ¼ë¡œ ë³€ê²½
 			a = tmp2;
 			b = tmp1;
 	         }
