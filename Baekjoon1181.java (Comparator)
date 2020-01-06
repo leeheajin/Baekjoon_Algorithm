@@ -1,4 +1,4 @@
-// 1181. ¾ËÆÄºª ¼Ò¹®ÀÚ·Î ÀÌ·ç¾îÁø N°³ÀÇ ´Ü¾î°¡ µé¾î¿À¸é ¾Æ·¡¿Í °°Àº Á¶°Ç¿¡ µû¶ó Á¤·ÄÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.
+// 1181. ì•ŒíŒŒë²³ ì†Œë¬¸ìë¡œ ì´ë£¨ì–´ì§„ Nê°œì˜ ë‹¨ì–´ê°€ ë“¤ì–´ì˜¤ë©´ ì•„ë˜ì™€ ê°™ì€ ì¡°ê±´ì— ë”°ë¼ ì •ë ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì‹œì˜¤.
 
 import java.util.*;
 
@@ -7,19 +7,19 @@ public class Baekjoon1181 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt(); // ´Ü¾îÀÇ °³¼ö
-		sc.nextLine(); // °³Çà¹®ÀÚ »èÁ¦
+		int N = sc.nextInt(); // ë‹¨ì–´ì˜ ê°œìˆ˜
+		sc.nextLine(); // ê°œí–‰ë¬¸ì ì‚­ì œ
 		
-		HashSet<String> set = new HashSet<String>(); // Áßº¹°ªÀ» ÀúÀåÇÏÁö ¾Ê±â À§ÇØ HashSet »ç¿ë
+		HashSet<String> set = new HashSet<String>(); // ì¤‘ë³µê°’ì„ ì €ì¥í•˜ì§€ ì•Šê¸° ìœ„í•´ HashSet ì‚¬ìš©
 		 		
 		for(int i=0; i<N ; i++)
 			set.add(sc.nextLine());
 		 		
-		ArrayList<String> list = new ArrayList<String>(set); // sort¸¦ »ç¿ëÇÏ±â À§ÇØ Collections(ArrayList)·Î ¹Ù²Ş
+		ArrayList<String> list = new ArrayList<String>(set); // sortë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ Collections(ArrayList)ë¡œ ë°”ê¿ˆ
 		 	
 		Collections.sort(list, new MyComparator());
 		 		
-		for (String s : list)  // Á¤·ÄµÈ ¹è¿­À» Ãâ·Â
+		for (String s : list)  // ì •ë ¬ëœ ë°°ì—´ì„ ì¶œë ¥
 			System.out.println(s);
 
 	}
