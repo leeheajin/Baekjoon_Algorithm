@@ -1,8 +1,8 @@
-// 2293. n°¡Áö Á¾·ùÀÇ µ¿ÀüÀÌ ÀÖ´Ù. °¢°¢ÀÇ µ¿ÀüÀÌ ³ªÅ¸³»´Â °¡Ä¡´Â ´Ù¸£´Ù. ÀÌ µ¿ÀüÀ» Àû´çÈ÷ »ç¿ëÇØ¼­, ±× °¡Ä¡ÀÇ ÇÕÀÌ k¿øÀÌ µÇµµ·Ï ÇÏ°í ½Í´Ù. ±× °æ¿ìÀÇ ¼ö¸¦ ±¸ÇÏ½Ã¿À. °¢°¢ÀÇ µ¿ÀüÀº ¸î °³¶óµµ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+// 2293. nê°€ì§€ ì¢…ë¥˜ì˜ ë™ì „ì´ ìžˆë‹¤. ê°ê°ì˜ ë™ì „ì´ ë‚˜íƒ€ë‚´ëŠ” ê°€ì¹˜ëŠ” ë‹¤ë¥´ë‹¤. ì´ ë™ì „ì„ ì ë‹¹ížˆ ì‚¬ìš©í•´ì„œ, ê·¸ ê°€ì¹˜ì˜ í•©ì´ kì›ì´ ë˜ë„ë¡ í•˜ê³  ì‹¶ë‹¤. ê·¸ ê²½ìš°ì˜ ìˆ˜ë¥¼ êµ¬í•˜ì‹œì˜¤. ê°ê°ì˜ ë™ì „ì€ ëª‡ ê°œë¼ë„ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
 
 import java.util.Scanner;
 
-public class a_2293 {
+public class Beakjoon2293 {
 
 	public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class a_2293 {
 		
 		for (int i=1; i<=n; i++) coin[i] = sc.nextInt();
 		
-		int D[][] = new int [n+1][k+1]; // n°³ÀÇ µ¿ÀüÀ¸·Î k¿ø ¸¸µå´Â °æ¿ìÀÇ ¼ö
+		int D[][] = new int [n+1][k+1]; // nê°œì˜ ë™ì „ìœ¼ë¡œ kì› ë§Œë“œëŠ” ê²½ìš°ì˜ ìˆ˜
 		
 		 for (int i=1; i<=n; i++) {
 		        D[i][0] = 1;
