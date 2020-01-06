@@ -1,18 +1,17 @@
-package ¼öÇĞ2;
 
 import java.util.*; // Scanner, List
 
-public class a_1978_1 {
+public class Beakjoon1978_1 {
 
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt(); // test case
-		int num [] = new int [t]; // t°³ÀÇ ¼ö¸¦ ÀúÀåÇÏ±â À§ÇÑ º¯¼ö ¼±¾ğ
+		int num [] = new int [t]; // tê°œì˜ ìˆ˜ë¥¼ ì €ì¥í•˜ê¸° ìœ„í•œ ë³€ìˆ˜ ì„ ì–¸
 		
 		int count = 0;
 		
-		for (int i=0; i<t; i++) { // ¼ö¸¦ ¹Ş¾Æ¼­ ÀúÀå
+		for (int i=0; i<t; i++) { // ìˆ˜ë¥¼ ë°›ì•„ì„œ ì €ì¥
 			num [i] = sc.nextInt();
 		}
 		
