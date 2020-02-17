@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Beakjoon1427 {
+public class Baekjoon1427 {
 
 	public static void main(String[] args) throws Exception {
 		
