@@ -1,7 +1,7 @@
 
 import java.util.*; // Scanner, List
 
-public class Beakjoon1978_1 {
+public class Baekjoon1978_1 {
 
 	public static void main(String[] args) {
 		
