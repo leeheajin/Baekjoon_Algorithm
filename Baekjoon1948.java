@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Beakjoon1948 {
+public class Baekjoon1948 {
 
 	public static void main(String[] args) {
 
