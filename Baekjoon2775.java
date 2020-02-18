@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Beakjoon2775 {
+public class Baekjoon2775 {
 
 	static int memo[][] = new int [15][15];
 	
