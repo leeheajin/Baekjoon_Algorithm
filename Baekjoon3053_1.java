@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Beakjoon3053_1 {
+public class Baekjoon3053_1 {
 
 	public static void main(String[] args) {
 
