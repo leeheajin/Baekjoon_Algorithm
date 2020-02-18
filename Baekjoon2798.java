@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Beakjoon2798 {
+public class Baekjoon2798 {
 
 	public static void main(String[] args) {
 
