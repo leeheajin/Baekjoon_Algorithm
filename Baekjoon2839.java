@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Beakjoon2839 {
+public class Baekjoon2839 {
 
 	public static void main(String[] args) {
 		
