@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Beakjoon2751 {
+public class Baekjoon2751 {
 	
 	static int sorted[] = new int[1000000];
 	
