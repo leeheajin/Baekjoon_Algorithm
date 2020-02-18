@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Beakjoon2292 {
+public class Baekjoon2292 {
 
 	public static void main(String[] args) {
 		
