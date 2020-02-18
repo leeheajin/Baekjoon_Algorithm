@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Beakjoon2108 {
+public class Baekjoon2108 {
 
 	public static void main(String[] args) throws Exception { // 예외처리가 반드시 필요
 
